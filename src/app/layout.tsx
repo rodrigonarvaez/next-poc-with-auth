@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import '@/styles/globals.css'
-import Link from 'next/link'
+import NavMenu from './_components/NavMenu'
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -31,7 +31,8 @@ export default function RootLayout({
       >
         <header className="py-2">
           <div className="flex items-baseline justify-between">
-            <h1 className="text-3xl font-bold">POC</h1>
+            <div className="text-primary text-4xl font-bold">POC</div>
+            <NavMenu />
           </div>
         </header>
         <main className="grow">{children}</main>
