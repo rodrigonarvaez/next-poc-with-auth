@@ -1,7 +1,7 @@
 'use client'
 
 import { useFormState } from 'react-dom'
-import { signInAction } from './action'
+import { signInAction } from './actions'
 import { SignInFormState } from './types'
 
 const initialState: SignInFormState = {}
